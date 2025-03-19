@@ -27,9 +27,11 @@ jobs:
         
     - name: Build Docker Image
       run: |
-        docker build -t julianlop/docker-graphql:1.0.1 .
+        docker build -t julianlop/docker-graphql:1.0.2 .
+        docker build -t julianlop/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
-        docker push julianlop/docker-graphql:1.0.1
+        docker push julianlop/docker-graphql:1.0.2
+        docker push julianlop/docker-graphql:latest
         
